@@ -158,6 +158,14 @@ p.lead {
 	line-height: 1.8;
 	color: #424242;
 }
+p.indent{
+	margin-left: 40px;
+	font-family: "lora-regular", serif;
+	font-size: 2rem;
+	line-height: 1.8;
+	color: #424242;
+	
+}
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
@@ -941,12 +949,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 .skill-bars {
 	list-style: none;
-	margin: 6rem 0 3rem;
+	margin: 1rem 100 1rem;
 }
 .skill-bars li {
 	height: .6rem;
 	background: #a1a1a1;
-	width: 100%;
+	width: 70%;
 	margin-bottom: 6rem;
 	padding: 0;
 	position: relative;
@@ -1024,6 +1032,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .grey-section p.lead {
 	color: #7d7d7d;
+}
+.grey-section p.indent {
+	color: #7d7d7d;
+	margin-left: 40px;
+	
 }
 .section-intro {
 	max-width: 700px;
