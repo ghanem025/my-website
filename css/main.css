@@ -977,7 +977,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .skill-bars li .progress span {
 	position: absolute;
-	right: 0;
+	right: -15px;
 	top: -3.6rem;
 	display: block;
 	font-family: "poppins-regular", sans-serif;
