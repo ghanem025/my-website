@@ -1,3 +1,3 @@
 # my-website
 My personal website
-https://ghanemghanem.me/
+https://ghanemghanem.co/
