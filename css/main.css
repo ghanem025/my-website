@@ -101,9 +101,9 @@ p img {
 }
 p.lead {
 	font-family: "lora-regular", serif;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	line-height: 1.8;
-	color: #424242;
+	color: #000000;
 }
 p.indent{
 	margin-left: 40px;
@@ -111,7 +111,6 @@ p.indent{
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #424242;
-	
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -321,10 +320,7 @@ form,
 	margin-bottom: 3rem;
 }
 
-/**
- * floated image - (_document-setup.scss)  
- * -------------------------------------------------------------------
- */
+
 img.pull-right {
 	margin: .9rem 0 0 2.4rem;
 }
@@ -332,10 +328,6 @@ img.pull-left {
 	margin: .9rem 2.4rem 0 0;
 }
 
-/**
- * block grid paddings - (_document-setup.scss) 
- * -------------------------------------------------------------------
- */
 .bgrid {
 	padding: 0 20px;
 }
@@ -360,10 +352,6 @@ img.pull-left {
 	}
 }
 
-/**
- * pace.js styles - minimal  - (_document-setup.scss)
- * -------------------------------------------------------------------
- */
 .pace {
 	-webkit-pointer-events: none;
 	pointer-events: none;
@@ -384,12 +372,6 @@ img.pull-left {
 	height: 6px;
 }
 
-/** 
- * ===================================================================
- * 04. preloader - (_preloader-1.scss)
- *
- * ------------------------------------------------------------------- 
- */
 #preloader {
 	position: fixed;
 	top: 0;
@@ -447,12 +429,6 @@ img.pull-left {
 	}
 }
 
-/** 
- * ===================================================================
- * 05. forms - (_forms.scss)
- *
- * ------------------------------------------------------------------- 
- */
 fieldset {
 	border: none;
 }
@@ -565,10 +541,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	top: .15rem;
 }
 
-/**
- * Style Placeholder Text  
- * -
- */
+
 ::-webkit-input-placeholder {
 	color: #a1a1a1;
 }
@@ -585,12 +558,6 @@ label > input[type="checkbox"], label > input[type="radio"] {
 	color: #a1a1a1 !important;
 }
 
-/** 
- * ===================================================================
- * 06. buttons - (_button-essentials.scss)
- *
- * ------------------------------------------------------------------- 
- */
 .button,
 a.button,
 button,
@@ -690,18 +657,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	padding: 0;
 }
 
-
-/** 
- * ===================================================================
- * 07. other components - (_others.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-/**
- * alert box - (_alert-box.scss)
- * -------------------------------------------------------------------
- */
 .alert-box {
 	padding: 2.1rem 4rem 2.1rem 3rem;
 	position: relative;
@@ -733,14 +688,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #bba31b;
 }
 
-/**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
 
-/**
- * drop cap 
- */
 .drop-cap:first-letter {
 	float: left;
 	margin: 0;
@@ -753,9 +701,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #313131;
 }
 
-/**
- * line definition style
- */
 .lining dt, .lining dd {
 	display: inline;
 	margin: 0;
@@ -775,9 +720,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: -0.2em;
 }
 
-/**
- * dictionary definition style
- */
+
 .dictionary-style dt {
 	display: inline;
 	counter-reset: definitions;
@@ -794,19 +737,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
- */
+
 .pull-quote {
 	position: relative;
 	padding: 2.1rem 3rem 2.1rem 0px;
@@ -835,19 +766,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * ---------------------------------------------------------------------
- */
+
 .stats-tabs {
 	padding: 0;
 	margin: 3rem 0;
@@ -881,10 +800,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #888888;
 }
 
-/**
- * skillbars - (_skillbars.scss)
- * -------------------------------------------------------------------
- */
+
 .skill-bars {
 	list-style: none;
 	margin: 1rem 100 1rem;
@@ -959,12 +875,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .percent100 { width: 100%; }
 
 
-/** 
- * ===================================================================
- * 08. common styles (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 .grey-section {
 	background: #ebebeb;
 }
@@ -999,11 +909,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	letter-spacing: .4rem;
 }
 
-/**
- * responsive:
- * common styles
- * ------------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:768px) {
 	.section-intro {
 		max-width: 650px;
@@ -1028,12 +934,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-/** 
- * ===================================================================
- * 09. header styles - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 header {
 	position: fixed;
 	width: 100%;
@@ -1074,10 +974,7 @@ header .logo a {
 	background-size: 92px 15px;
 }
 
-/**
- * menu toggle - (_layout.css)
- * ------------------------------------------------------------------- 
- */
+
 .menu-toggle {
 	float: left;
 	width: 40px;
@@ -1142,7 +1039,6 @@ header .logo a {
 	transition-property: bottom, transform;
 }
 
-/* is clicked */
 .menu-toggle.is-clicked span {
 	background-color: rgba(255, 0, 119, 0);
 }
@@ -1167,7 +1063,7 @@ header .logo a {
 	transform: rotate(-45deg);
 }
 
-/* navigation panel */
+
 #main-nav-wrap {
 	display: block;
 	width: 100%;
@@ -1178,7 +1074,7 @@ header .logo a {
 	left: 0;
 }
 
-/* dropdown nav */
+
 .main-navigation {
 	background: #000000;
 	padding: 24px 30px 42px;
@@ -1211,11 +1107,7 @@ header .logo a {
 	color: #FF0077;
 }
 
-/**
- * responsive:
- * header styles
- * --------------------------------------------------------------- 
- */
+
 @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
@@ -1238,12 +1130,6 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 10. intro - (_layout.scss) 
- *
- * ------------------------------------------------------------------- 
- */
 #intro {
 	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
@@ -1370,11 +1256,6 @@ header .logo a {
 	color: #cc005f;
 }
 
-/**
- * responsive:
- * Intro
- * --------------------------------------------------------------- 
- */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
 		font-size: 7.6rem;
@@ -1434,12 +1315,6 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 11. about - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 #about {
 	background: #FFFFFF;
 	padding-top: 12rem;
@@ -1515,11 +1390,6 @@ header .logo a {
 	margin-right: 4rem;
 }
 
-/**
- * responsive:
- * about
- * ------------------------------------------------------------------- 
- */
 @media only screen and (max-width:1024px) {
 	.intro-info {
 		margin-right: 0;
@@ -1565,12 +1435,6 @@ header .logo a {
 	}
 }
 
-/** 
- * ===================================================================
- * 12. resume - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
 #resume {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
@@ -1915,7 +1779,6 @@ header .logo a {
 .mfp-fade.mfp-bg.mfp-removing {
 	opacity: 0;
 }
-
 
 .mfp-fade.mfp-wrap .mfp-content {
 	opacity: 0;
@@ -2471,9 +2334,9 @@ footer .copyright span:last-child::after {
 	width: 50%;
 }
 
-.projects ul{
+/* .projects ul{
 	text-align: center;
-}
+} */
 
 .projects li{
 	text-align: center;
