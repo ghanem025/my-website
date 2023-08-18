@@ -1,5 +1,5 @@
-@import url("fonts.css");
-@import url("micons/micons.css");
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 html {
 	font-size: 10px;
@@ -153,8 +153,14 @@ li {
 	color: #080808; 
 	display: list-item;
 }
-ol, ul {
-	margin-right: 1.6rem;
+ol {
+	margin-left: 1.7rem;
+}
+ul {
+	padding-left: .4rem;
+}
+ul ul, ul ol, ol ol, ol ul {
+	margin: .6rem 0 .6rem 1.7rem;
 }
 
 button, .button {
@@ -320,13 +326,13 @@ button.stroke:hover, .button.stroke:hover {
 }
 
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	background: #151515;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	height: 100%;
+	height: 200%;
 	min-height: 720px;
 	display: table;
 	position: relative;
@@ -402,7 +408,7 @@ button.stroke:hover, .button.stroke:hover {
 	color: #FFFFFF !important;
 	border-color: rgba(255, 255, 255, 0.3);
 	height: 6rem !important;
-	line-height: 5.4rem !important;
+	line-height: 3.5rem !important;
 	padding: 0 3.5rem 0 3rem !important;
 	margin-top: .6rem;
 	font-size: 1.3rem;
@@ -637,7 +643,7 @@ button.stroke:hover, .button.stroke:hover {
 	width: 100%;
 	max-width: 500px;
 	min-width: 500px;
-	padding: 25px;
+	padding: 30px;
 	text-align: center;
 	border: 1px solid #ccc; 
 	background-color: #cc005f; 
@@ -696,6 +702,8 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
 	grid-gap: 10px;
 	background-color: #2195f300;
 	padding: 40px;
+	justify-content: center;
+	align-items: center;
   }
   
   .grid-container > div {
@@ -703,9 +711,9 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
 	text-align: center;
 	padding: 20px 0;
 	font-size: 30px;
-	margin: 40px;
-
+	margin: 10px;
   }
+
 @media only screen and (max-width:1366px) {
 	.skill-container{
 		width: 100%;
@@ -718,7 +726,25 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
 	img{
 		min-width: 90%;
 	}
-	
+	.grid-container {
+		display: grid;
+		grid-column-gap: 20px;
+		grid-template-columns: auto;
+		justify-content: center;
+		align-items: center;
+	  }
+	  .skill-container{
+		width: 100%;
+		min-width: 250px;
+
+	  }	
+	  .grid-container > div {
+		background-color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		margin-left: -45px;
+	  }
 }
 
 @media only screen and (max-width:414px) {
@@ -732,7 +758,14 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
   .skill-container{
 	width: 100%;
 	max-width: 500px;
-	min-width: 300px;
+	min-width: 250px;
+  }
+  .grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+	margin-left: -50px;
   }
 }
 
@@ -749,6 +782,13 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
 		max-width: 500px;
 		min-width: 300px;
 	  }
+	  .grid-container > div {
+		background-color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		margin-left: -60px;
+	  }
 }
 @media only screen and (max-width:360px) {
 	.grid-container {
@@ -763,6 +803,13 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
 		max-width: 500px;
 		min-width: 280px;
 	  }
+	  .grid-container > div {
+		background-color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		padding: 20px 0;
+		font-size: 30px;
+		margin-left: -60px;
+	  }
 }
 
 .fade-in-element {
@@ -775,5 +822,48 @@ img {max-width: 100%;height:auto;border-radius: 2%;}
 		opacity: 1; 
 	}
 }
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
   
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .info-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #2196F3;
+  }
+  
+  .info-item span {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+ 

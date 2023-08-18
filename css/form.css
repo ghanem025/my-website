@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .info-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #2196F3;
+  }
+  
+  .info-item span {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  /* Font Awesome Icons (You can include Font Awesome in your project or use a different icon library) */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

@@ -4,11 +4,8 @@
     <head>
         <title>My Website</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/base.css">  
         <link rel="stylesheet" href="css/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <script src="js/modernizr.js"></script>
-        <script src="js/pace.min.js"></script>
         <meta name="author" content="Ghanem Ghanem">
         <meta charset="UTF-8">
         <style>
@@ -26,7 +23,12 @@
                     font-family: "poppins-semibold", sans-serif;
                     font-size: 1.9rem;
                     line-height: 1.0;
-                    }
+                }
+                .grid-container {
+                    display: grid;
+                    place-items: center; /* Center the container both horizontally and vertically */
+                    height: 100vh; /* Set the height of the container to the viewport height */
+                }
             }
 
             @media only screen and (max-width:375px) {
@@ -52,16 +54,16 @@
     <body>
         <div class="topnav">
             <a class="" href="index.html">Home</a>
-            <a href="./my-resume.pdf">Resume</a>
+            <a href="resume.html">Resume</a>
             <a href="projects.html">Projects</a>
             <a href="skills.html">Skills</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact me</a>
         </div>
         <h1 style="text-align: center; margin: 40px;">Skills</h1>
-        <div class="grid-container fade-in-element" style="  justify-content: center; align-items: center; ">
+        <div class="grid-container fade-in-element">
                 
-                <div class="grid-item ">
+                <div class="grid-item">
                     <div class="skill-container">
                         <h3>Programming languages</h3>
                         <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
