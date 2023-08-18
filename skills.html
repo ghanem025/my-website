@@ -1,53 +1,108 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
     <head>
         <title>My Website</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/base.css">  
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/vendor.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <script src="js/modernizr.js"></script>
         <script src="js/pace.min.js"></script>
         <meta name="author" content="Ghanem Ghanem">
+        <meta charset="UTF-8">
+        <style>
+            li{
+                color:#e4e0e0;
+                margin: 20px;
+                font-family: "poppins-semibold", sans-serif;
+                font-size: 2.2rem;
+                line-height: 1.0;
+            }
+            @media only screen and (max-width:414px) {
+                li{
+                    color:#e4e0e0;
+                    margin: 20px;
+                    font-family: "poppins-semibold", sans-serif;
+                    font-size: 1.9rem;
+                    line-height: 1.0;
+                    }
+            }
+
+            @media only screen and (max-width:375px) {
+                li{
+                    color:#e4e0e0;
+                    margin: 20px;
+                    font-family: "poppins-semibold", sans-serif;
+                    font-size: 1.9rem;
+                    line-height: 1.0;
+                }
+            }
+            @media only screen and (max-width:360px) {
+                li{
+                    color:#e4e0e0;
+                    margin: 20px;
+                    font-family: "poppins-semibold", sans-serif;
+                    font-size: 1.9rem;
+                    line-height: 1.0;
+                }
+            }
+        </style>
     </head>
-
-    <div class="topnav">
-        <a class="index.html" href="#home">Home</a>
-        <a href="./my-resume.pdf">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="about.html">About</a>
-    </div>
-
-    <div class="col-six tab-full">
-
-        <h2>Skills</h2>
-        <h4 style="margin-left: 20px;">Programming languages</h4>
-            <ul style="margin-left: 80px;">
-               <li>Python</li>
-               <li>C++</li>
-                <li>C</li>
-               <li>Java</li>
-            </ul>  
-        <h4 style="margin-left: 20px;">Frameworks/Libraries</h4>
-            <ul style="margin-left: 80px;">
-                <li>Django</li>
-                <li>Flask</li>
-                <li>Java Swing</li>
-                <li>GTK</li>
-            </ul>
-
-        <h4 style="margin-left: 20px;">Software Tools</h4> 
-            <ul style="margin-left: 80px;">
-                <li>Git</li>
-                <li>Gitlab</li>
-                <li>Docker</li>
-                <li>AWS</li>
-                <li>REST APIs</li>
-                <li>Linux</li>
-                <li>HTML/CSS</li>
-            </ul>
-    </div>
+    <body>
+        <div class="topnav">
+            <a class="" href="index.html">Home</a>
+            <a href="./my-resume.pdf">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact me</a>
+        </div>
+        <h1 style="text-align: center; margin: 40px;">Skills</h1>
+        <div class="grid-container fade-in-element" style="  justify-content: center; align-items: center; ">
+                
+                <div class="grid-item ">
+                    <div class="skill-container">
+                        <h3>Programming languages</h3>
+                        <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>Javascript</li>
+                            <li>C#</li>
+                            <li>Rust</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="skill-container">
+                        <h3>Frameworks/Libraries</h3>
+                        <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>Java Swing</li>
+                            <li>GTK</li>
+                            <li>Sanic</li>
+                            <li>FFmpeg</li>
+                            <li>Cryptography</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="skill-container">
+                        <h3>Software Tools</h3> 
+                        <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                            <li>Git</li>
+                            <li>Gitlab</li>
+                            <li>Docker</li>
+                            <li>AWS</li>
+                            <li>REST APIs</li>
+                            <li>Linux/Unix</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </body>
 </html>

@@ -1,61 +1,100 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
     <head>
+
         <title>My Website</title>
-        
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/base.css">  
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/vendor.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <script src="js/modernizr.js"></script>
-        <script src="js/pace.min.js"></script>
         <meta name="author" content="Ghanem Ghanem">
+        <meta charset="UTF-8">
+        <style>
+            p.lead{
+                font-family: "poppins-semibold", sans-serif;
+            }
+        </style>
     </head>
 
-    <div class="topnav">
-        <a class="index.html" href="#home">Home</a>
-        <a href="./my-resume.pdf">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="skills.html">Skills</a>
-        <a href="about.html">About</a>
-    </div>
-
-    <section id="about"> 
-        <div class="projects">
-            <h5 style="font-size: 40px; text-align: center;">Projects</h5>
-            <h4 style="font-size: 25px;">Django Website project<a style="margin-left: 40px;" href="https://github.com/ghanem025/Django_website">( Project link )</a></h4>
-            <ul>
-                <p class="lead">Once you enter the website there will be a login screen, you must login to access the website and database</p>
-                <p class="lead">Created a website in Django that had three models, Products, Stores and Customers.</p>
-                <p class="lead">Implemented a form for products, stores and clients. Forms where used to input values such as name, price, location, summary
-                    and description.</p>
-                <p class="lead"> Developed a function that would get all the objects in products and list them on the site, this was done using a combination
-                    of <strong> Python</strong>,<strong> HTML</strong> and <strong>CSS.</strong>
-                    </p>
-                <p class="lead">Implemented a search algorithm to identify customers/products, this was done using HTTP Methods GET and POST.</p>
-            </ul>
-            <h4 style="font-size: 25px;">Currency Conversion App<a style="margin-left: 40px;" href="https://github.com/ghanem025/Currency_converter">( Project link )</a></h4>
-            <ul>
-                <p class="lead">Developed a currency conversion app using Java, Java Swing was used to create the GUI.<p></li>
-                <p class="lead">Implemented an API, that sends a GET request to a Currency conversion API asking for real-time updated conversion rates.<p></li>
-                <p class="lead">All conversions are automated and do not require me to keep changing the rates within my program, instead I request the updated rates using an HTTP.</p></li>
-            </ul>
-            <h4 style="font-size: 25px;">Discord Bot <a style="margin-left: 40px;" href="https://github.com/ghanem025/JS_bot">( Project link )</a></h4>
-            <ul>
-                <p class="lead">Developed a personal bot on discord using Javascript and asynchronous programming practices.<p></li>
-                <p class="lead">Implements features such as reminders, playingmusic, send direct messages to other users, and print out a list of all members in the server.</p> </li>
-                <p class="lead">Developed an attribute where the users send messages or ping the bot itself and the bot will reply to those messages.</p></li>
-                <p class="lead">Bot can track all users in the server. If a new user joins a direct message will be sent to them, greeting them to the server.</p></li>
-            </ul>
-            <h4 style="font-size: 25px;">Credit Card verification algorithm <a style="margin-left: 40px;" href="https://github.com/ghanem025/Credit_card_verification">( Project link )</a></h4>
-            <ul>
-                <p class="lead">program that will verify a credit cards, programmed in C++</p> </li>
-                <p class="lead">Simple implementation of luhn's algorithm to verify if a credit card is valid. Also added the functionality to check what credit card issuer a user has..<p></li>
-                <p class="lead">The program will also return what type of credit card (if its a valid credit card) for example if its an amex, visa or master card</p></li>
-            </ul>
-
+    <body id="top">
+        <div class="topnav">
+            <a class="" href="index.html">Home</a>
+            <a href="./my-resume.pdf">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact me</a>
         </div>
-    </section>
+
+        <section id="about"> 
+            <div class="projects fade-in-element" >
+                
+                <h1 style="text-align: center;">Projects</h1>
+                
+                <div class="project-container center">
+                    
+                    <h2 >Django Website project<a style="margin-left: 10px;" href="https://github.com/ghanem025/Django_website">( Project link )</a></h2>
+                    <ul class="no-bullets" style="text-align: center;">
+                        <li><p class="lead">Once you enter the website there will be a login screen, you must login to access the website and database</p></li>
+                        <li ><p class="lead">Created a website in Django that had three models, Products, Stores and Customers.</p></li>
+                        <li><p class="lead">Implemented a form for products, stores and clients. Forms where used to input values such as name, price, location, summary
+                            and description.</p></li>
+                            <li><p class="lead"> Developed a function that would get all the objects in products and list them on the site, this was done using a combination
+                            of  Python, HTML and CSS.
+                            </p></li>
+                            <li><p class="lead">Implemented a search algorithm to identify customers/products, this was done using HTTP Methods GET and POST.</p></li>
+                    </ul>
+                </div>
+                <h2 style="text-align: center; margin: 60px;">Login Page</h2>
+                <img src="project_img/login.png" alt="login screen" style="max-width: 85%; margin: 60px auto"  class="center">
+
+                <h2 style="text-align: center; margin: 60px;">Main Menu</h2>
+                <img src="project_img/menu.png" alt="login screen" style="max-width: 85%; margin: 60px auto"  class="center">
+                <div class="project-container center">
+                    <h2 >Currency Conversion App<a style="margin-left: 10px;" href="https://github.com/ghanem025/Currency_converter">( Project link )</a></h2>
+                    <ul class="no-bullets">
+                        <li><p class="lead">Developed a currency conversion app using Java, Java Swing was used to create the GUI.<p></li>
+                        <li><p class="lead">Implemented an API, that sends a GET request to a Currency conversion API asking for real-time updated conversion rates.<p></li>
+                        <li><p class="lead">All conversions are automated and do not require me to keep changing the rates within my program, instead I request the updated rates using an HTTP.</p></li>
+                    </ul>
+                </div>
+                <h2 style="text-align: center; margin: 60px;">Currency converter</h2>
+                <img src="project_img/currency.png" alt="login screen" style="max-width: 80%; margin: 60px auto"  class="center">
+                
+                <h2 style="text-align: center; margin: 60px;">Currency options</h2>
+                <img src="project_img/options.png" alt="login screen" style="max-width: 80%; margin: 60px auto"  class="center">
+
+                <div class="project-container center">
+                    <h2 >Megaman battle network remake <a style="margin-left: 10px;" href="https://github.com/ghanem025/JS_bot">( Project link )</a></h2>
+                    <ul class="no-bullets">
+                        <li ><p class="lead">Recreation of the megaman battle network series<p></li>
+                        <li ><p class="lead">Implemented 2D open world game by using Java framework LIBGDX and Tiled</p> </li>
+                        <li ><p class="lead">Worked with vectors and vector collision to apply force to characters.</p></li>
+                        <li ><p class="lead">reated multiple classes that handled animations, walking, creating objectsand NPC.</p></li>
+                    </ul>
+                </div>
+
+                <h2 style="text-align: center; margin: 60px;">Title screen</h2>
+                <img src="project_img/title.png" alt="login screen" style="max-width: 80%; margin: 60px auto"  class="center">
+                
+                <h2 style="text-align: center; margin: 60px;">bedroom</h2>
+                <img src="project_img/room.png" alt="login screen" style="max-width: 80%; margin: 60px auto"  class="center">
+
+                <h2 style="text-align: center; margin: 60px;">City</h2>
+                <img src="project_img/city.png" alt="login screen" style="max-width: 80%; margin: 60px auto"  class="center">
+
+                <h2 style="text-align: center; margin: 60px;">Game shop</h2>
+                <img src="project_img/shop.png" alt="login screen" style="max-width: 80%; margin: 60px auto"  class="center">
+
+                <div class="project-container center">
+                    <h2>Credit Card verification algorithm <a style="margin-left: 10px;" href="https://github.com/ghanem025/Credit_card_verification">( Project link )</a></h2>
+                    <ul class="no-bullets">
+                        <li><p class="lead">program that will verify a credit card, programmed in C++</p> </li>
+                        <li><p class="lead">Simple implementation of luhn's algorithm to verify if a credit card is valid. Also added the functionality to check what credit card issuer a user has..<p></li>
+                        <li><p class="lead">The program will also return what type of credit card (if its a valid credit card) for example if its an amex, visa or master card</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>

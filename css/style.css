@@ -3,9 +3,7 @@ body {
    height: 100vh;
    overflow: hidden;
    display: contents;
-   font-family: '
-  Anton'
-  , sans-serif;
+   font-family: 'Anton', sans-serif;
    justify-content: center;
    align-items: center;
 }
@@ -26,9 +24,7 @@ body {
    animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
  .shooting_star::before {
-   content: '
-  '
-  ;
+   content: '';
    position: absolute;
    top: calc(50% - 1px);
    right: 0;
@@ -39,9 +35,7 @@ body {
    animation: shining 3000ms ease-in-out infinite;
 }
  .shooting_star::after {
-   content: '
-  '
-  ;
+   content: '';
    position: absolute;
    top: calc(50% - 1px);
    right: 0;
