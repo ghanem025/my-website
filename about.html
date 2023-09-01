@@ -8,13 +8,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="author" content="Ghanem Ghanem">
         <meta charset="UTF-8">
+
+        <style>
+            li{
+                color:#e4e0e0;
+                margin: 20px;
+                font-family: "poppins-semibold", sans-serif;
+                font-size: 2.2rem;
+                line-height: 1.0;
+            }
+            @media only screen and (max-width:414px) {
+                li{
+                    color:#e4e0e0;
+                    margin: 20px;
+                    font-family: "poppins-semibold", sans-serif;
+                    font-size: 1.9rem;
+                    line-height: 1.0;
+                }
+                .grid-container {
+                    display: grid;
+                    place-items: center; /* Center the container both horizontally and vertically */
+                    height: 100vh; /* Set the height of the container to the viewport height */
+                }
+            }
+
+            @media only screen and (max-width:375px) {
+                li{
+                    color:#e4e0e0;
+                    margin: 20px;
+                    font-family: "poppins-semibold", sans-serif;
+                    font-size: 1.9rem;
+                    line-height: 1.0;
+                }
+            }
+            @media only screen and (max-width:360px) {
+                li{
+                    color:#e4e0e0;
+                    margin: 20px;
+                    font-family: "poppins-semibold", sans-serif;
+                    font-size: 1.9rem;
+                    line-height: 1.0;
+                }
+            }
+        </style>
     </head>
     <body id="top">
         <div class="topnav">
             <a class="" href="index.html">Home</a>
             <a href="resume.html">Resume</a>
             <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact me</a>
         </div>
@@ -23,16 +65,59 @@
 
             <div class="row section-intro fade-in-element">
                 <div class="col-twelve">
-
                     <h5>About Me</h5>
-                    <p class="lead">4th-year University student studying Software engineering at the University of Windsor. Love Creating projects that makes life easier, favourite programming 
-                        languages are C, C++ and Python.</p>            
-                    <p class="lead">I Currently have a year of experience in software development, my first role was as a Web Developer for the University of windsor. 
-                        My second role was as a Software Developer at Clearpath Robotics. If you are intreseted you can have a look at my projects that are
-                        displayed on the project tab (on top of the page) otherwise you can check out my github page</p>
+                    <p class="lead">I have a year of experience in software development, my first role was as a Web Developer for the University of windsor. 
+                     My second role was as a Software Developer at Clearpath Robotics. If you are intrested in my projects click the button below :) </p>        
                     <a class="button stroke smoothscroll" href="https://github.com/ghanem025" title="">My Github page</a>
                 </div>          
             </div> <!-- /section-intro -->
+
+
+            <h1 style="text-align: center; margin: -30px;">Skills</h1>
+            <div class="grid-container fade-in-element">
+                    <div class="grid-item">
+                        <div class="skill-container" style="min-height: 400px";>
+                            <h3>Programming languages</h3>
+                            <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C++</li>
+                                <li>C</li>
+                                <li>Javascript</li>
+                                <li>C#</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="skill-container" style="max-height: 400px;">
+                            <h3>Frameworks/Libraries</h3>
+                            <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                                <li>Django</li>
+                                <li>Flask</li>
+                                <li>Java Swing</li>
+                                <li>GTK</li>
+                                <li>Qt</li>
+                                <li>Sanic</li>
+                                <li>FFmpeg</li>
+                                <li>Cryptography</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="skill-container" style="min-height: 400px" >
+                            <h3>Software Tools</h3> 
+                            <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                                <li>Git</li>
+                                <li>Gitlab</li>
+                                <li>Docker</li>
+                                <li>AWS</li>
+                                <li>REST APIs</li>
+                                <li>Linux/Unix</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
         </section>
     </body>
 </html>

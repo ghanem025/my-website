@@ -641,12 +641,12 @@ button.stroke:hover, .button.stroke:hover {
 
 .skill-container{
 	width: 100%;
-	max-width: 500px;
-	min-width: 500px;
+	max-width: 300px;
+	min-width: 300px;
 	padding: 30px;
 	text-align: center;
 	border: 1px solid #ccc; 
-	background-color: #cc005f; 
+	background-color: #cc005fb4; 
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
 	border-radius: 8px; 
 }
