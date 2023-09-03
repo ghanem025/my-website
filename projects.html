@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
+
     <head>
 
         <title>My Website</title>
@@ -10,6 +11,87 @@
         <meta name="author" content="Ghanem Ghanem">
         <meta charset="UTF-8">
         <style>
+* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 4px;
+            transition: transform 0.2s;
+            flex-basis: calc(33.33% - 40px);
+            min-width: 300px;
+            text-align: center;
+            position: relative; /* Added for icon positioning */
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        a{
+            color: #fff !important;
+        }
+        .project-link {
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .project-link:hover {
+            background-color: #555;
+        }
+
+        /* Style for the icon */
+        .icon {
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            width: 35px;
+            height: 35px;
+        }
             p.lead{
                 font-family: "poppins-semibold", sans-serif;
             }
@@ -26,7 +108,7 @@
         </div>
 
         <section id="about"> 
-            <div class="projects fade-in-element" >
+            <!-- <div class="projects fade-in-element" >
                 
                 <h1 style="text-align: center;">Projects</h1>
                 
@@ -93,6 +175,63 @@
                         <li><p class="lead">The program will also return what type of credit card (if its a valid credit card) for example if its an amex, visa or master card</p></li>
                     </ul>
                 </div>
+            </div> -->
+
+            <div class="container">
+                <!-- Replace these with your GitHub project cards -->
+
+                <div class="project-card">
+                    <img src="project_img/C.png" alt="C Icon" class="icon">
+                    <h2 class="project-title">Multithreaded video decoder</h2>
+                    <h3>Tools: C, GTK4, FFmpeg, PulseAudio API</h3>
+                    <p class="project-description">Developed a multi-threaded video and audio decoder leveraging C, FFmpeg,PulseAudio Simple API, and GTK4.</p>
+                    <a class="project-link" href="https://github.com/ghanem025/Video-decoder">GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project_img/python.png" alt="Python Icon" class="icon" style="height: 45px; width: 45px;">
+                    <h2 class="project-title">Blockchain PHR system</h2>
+                    <h3>Tools: Python, Flask, cryptography, JavaScript, HTML/CSS </h3>
+                    <p class="project-description">Created a blockchain using Python for a PHR system (Personal health record). The blockchain stores a person’s name, date of
+                        birth, medical history, and their family doctor’s name.</p>
+                    <a class="project-link" href="https://github.com/ghanem025/Blockchain-app">GitHub Repository</a>
+                </div> 
+                <div class="project-card">
+                    <img src="project_img/java.png" alt="Java Icon" class="icon" style="height: 45px; width: 45px;">
+                    <h2 class="project-title">Currency converter</h2>
+                    <h3>Tools: Java, Java swing, JSON, Currency rates API</h3>
+                    <p class="project-description">A currency converter app developed in Java using a currency rates API and JSON object to get the updated rates .</p>
+                    <a class="project-link" href="https://github.com/ghanem025/Currency_converter">GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project_img/python.png" alt="Python Icon" class="icon" style="height: 45px; width: 45px;">
+                    <h2 class="project-title">Inventory and customer website</h2>
+                    <h3>Tools: Python, Django, REST API, JavaScript, HTML/CSS</h3>
+                    <p class="project-description">A Django website that is used to store product inventory and customer data</p>
+                    <a class="project-link" href="https://github.com/ghanem025/Django_website">GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project_img/java.png" alt="Java Icon" class="icon" style="height: 45px; width: 45px;">
+                    <h2 class="project-title">Megaman Battle Network Game</h2>
+                    <h3>Tools: Java, LIBGDX, Tiled, python</h3>
+                    <p class="project-description">Developing a remake for megaman Battle network (GBA game)</p>
+                    <a class="project-link" href="https://github.com/ghanem025/MBN-recreation">GitHub Repository</a>
+                </div>
+
+                <div class="project-card">
+                    <img src="project_img/C.png" alt="C Icon" class="icon">
+                    <h2 class="project-title">maximally connected subgraphs</h2>
+                    <h3>Tools: C</h3>
+                    <p class="project-description">C program that finds all the maximally connected subgraphs in a graph</p>
+                    <a class="project-link" href="https://github.com/ghanem025/maximally_connected_subgraphs">GitHub Repository</a>
+                </div>
+        
+
+        
+                <!-- Add more project cards as needed -->
+        
             </div>
         </section>
     </body>
