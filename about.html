@@ -50,6 +50,56 @@
                     line-height: 1.0;
                 }
             }
+
+            .project-card {
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                margin: 20px;
+                padding: 20px;
+                border-radius: 4px;
+                transition: transform 0.2s;
+                flex-basis: calc(33.33% - 40px);
+                min-width: 300px;
+                text-align: center;
+                position: relative; /* Added for icon positioning */
+            }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .project-title {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .project-description {
+                font-size: 16px;
+                color: #777;
+                margin-bottom: 20px;
+            }
+            .project-link {
+                text-decoration: none;
+                font-weight: bold;
+                padding: 8px 16px;
+                background-color: #333;
+                color: #fff;
+                border-radius: 4px;
+                transition: background-color 0.2s;
+            }
+
+            .project-link:hover {
+                background-color: #555;
+            }
+
+            li{
+                color: #333;
+            }
+            ul{
+                text-align: center;
+                border-radius: 10%;
+            }
+
         </style>
     </head>
     <body id="top">
@@ -70,15 +120,15 @@
                      My second role was as a Software Developer at Clearpath Robotics. If you are intrested in my projects click the button below :) </p>        
                     <a class="button stroke smoothscroll" href="https://github.com/ghanem025" title="">My Github page</a>
                 </div>          
-            </div> <!-- /section-intro -->
+            </div>
 
 
             <h1 style="text-align: center; margin: -30px;">Skills</h1>
             <div class="grid-container fade-in-element">
                     <div class="grid-item">
-                        <div class="skill-container" style="min-height: 400px";>
+                        <div class="project-card" style="min-height: 400px;">
                             <h3>Programming languages</h3>
-                            <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                            <ul class="no-bullets">
                                 <li>Python</li>
                                 <li>Java</li>
                                 <li>C</li>
@@ -89,9 +139,9 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="skill-container" style="max-height: 400px;">
+                        <div class="project-card" style="max-height: 400px;">
                             <h3>Frameworks/Libraries</h3>
-                            <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                            <ul class="no-bullets">
                                 <li>Django</li>
                                 <li>Flask</li>
                                 <li>Java Swing</li>
@@ -104,9 +154,9 @@
                         </div>
                     </div>
                     <div class="grid-item">
-                        <div class="skill-container" style="max-height: 400px" >
+                        <div class="project-card" style="max-height: 400px;">
                             <h3>Software Tools</h3> 
-                            <ul class="no-bullets" style="text-align: center; background-color: #333; border-radius: 10%;">
+                            <ul class="no-bullets">
                                 <li>Git</li>
                                 <li>Gitlab</li>
                                 <li>Docker</li>
